@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>ЖК "Мой город"</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<div class="mobile-menu">
+  <a href="#" class="mobile-menu__close"></a>
+  <ul class="menu my-ul">
+    <li><a href="#">Menu1</a></li>
+    <li><a href="#">Menu2</a></li>
+    <li><a href="#">Menu3</a></li>
+    <li><a href="#">Menu4</a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="header-logo"><img src="img/logo.svg" alt=""></a>
+        <div class="address">
+          <div class="address-icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+          </div>
+          <div class="address-text"><p>Село Засечное, МКРН «Лукоморье»</p></div>
+        </div>
+
+        <div class="footer-contacts">
+          <a href="tel:+78412290077" class="phone">8 8412 <span>29 00 77</span></a>
+          <a href="tel:+79631090077" class="phone-reserve">8 963 109 00 77</a>
+        </div>
+
+        <a href="#" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#callbackModal">заказать звонок</a>
+
+        <a href="#" class="btn-burger">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#burger"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="home-content">
+          <h1>Радоваться жизни здесь и сейчас</h1>
+
+          <div class="start-sales">старт продаж 1 строения</div>
+
+          <div class="start-sales-info">
+            <div class="info-item">
+              <p>срок сдачи</p><span>4 квартал 2022</span>
+            </div>
+            <div class="info-item">
+              <p>квартиры</p><span>от 38 до 107 м2</span>
+            </div>
+            <div class="info-item">
+              <p>в ипотеку</p><span>от 6700 ₽ /мес</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mortgage">
+          <h3>Ставка по ипотеке от 0,01%</h3>
+
+          <form method="post" class="form-mortgage">
+            <div class="form-group">
+              <label>
+                <input type="text" placeholder="имя" name="name">
+              </label>
+              <label>
+                <input type="text" placeholder="phone" required name="phone">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-accent">получить косультацию</button>
+              <div class="consent">нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 align-items-end d-flex">
+        <div class="readiness-stage">
+          <p>90%</p><span>готовность дома</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="about-image"><img src="img/about-image.jpeg" alt=""></div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="about-content">
+          <h2>
+            Жилой комплекс
+            <span>«Мой город»</span></h2>
+
+          <div class="box-text">
+            <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили и ввели в
+              эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города» продуманно
+              используемся
+              каждый квадратный метр. А ценовая политики строится на принципах доступности и разумной достаточности.
+              «Мой
+              город» - это теплые кирпичные дома, собственные котельные, просторные дворы и парковки. В шаговой
+              доступности магазины, аптеки, студии красоты. Рядом строится одна из самых больших школ в городе!</p>
+          </div>
+
+          <a href="#" class="btn btn-accent">подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="about-tabs">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button"
+                          role="tab" aria-controls="one" aria-selected="true">Архитектура
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button"
+                          role="tab" aria-controls="two" aria-selected="false">Благоустройство
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="three-tab" data-bs-toggle="tab" data-bs-target="#three" type="button"
+                          role="tab" aria-controls="three" aria-selected="false">Комфортные дворы
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button"
+                          role="tab" aria-controls="four" aria-selected="false">Здоровая атмосфера
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="five-tab" data-bs-toggle="tab" data-bs-target="#five" type="button"
+                          role="tab" aria-controls="five" aria-selected="false">Двор-сквер
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="sex-tab" data-bs-toggle="tab" data-bs-target="#sex" type="button"
+                          role="tab" aria-controls="sex" aria-selected="false">Зоны отдыха
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="seven-tab" data-bs-toggle="tab" data-bs-target="#seven" type="button"
+                          role="tab" aria-controls="seven" aria-selected="false">Коммерческая недвижимость
+                  </button>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-accent">хочу здесь жить</a>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Архитектура</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Благоустройство</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Комфортные дворы</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Здоровая атмосфера</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Двор-сквер</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="sex" role="tabpanel" aria-labelledby="sex-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Зоны отдыха</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="seven-tab">
+                  <div class="about-tabs__content">
+                    <div class="about-tabs__content-description">
+                      <h3>Коммерческая недвижимость</h3>
+                      <div class="box-text">
+                        <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили
+                          и ввели в эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города»
+                          продуманно используемся каждый квадратный метр. А ценовая политики строится на принципах
+                          доступности и разумной достаточности. «Мой город» - это теплые кирпичные дома, собственные
+                          котельные, просторные дворы и парковки. В шаговой доступности магазины, аптеки, студии
+                          красоты. Рядом строится одна из самых больших школ в городе!</p>
+                      </div>
+                    </div>
+                    <div class="about-tabs__content-image"><img src="img/image1.jpeg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Почему выбирают наш ЖК</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 mb-30">
+        <div class="advantages-box">
+          <img src="img/why-image1.jpeg" class="advantages-box__bg" alt="">
+          <div class="advantages-box__content">
+            <h3>Низкие коммунальные платежи</h3>
+            <div class="box-text">
+              <p>Собственная котельная, за счет которой жильцы смогут экономить на расходах на ЖКХ</p>
+            </div>
+            <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">получить
+              консультацию</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <img src="img/why-image2.jpeg" class="advantages-box__bg" alt="">
+          <div class="advantages-box__content">
+            <h3>Областная прописка</h3>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">получить
+              консультацию</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <img src="img/why-image3.jpeg" class="advantages-box__bg" alt="">
+          <div class="advantages-box__content">
+            <h3>Новоселье <br>в этом году</h3>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">получить
+              консультацию</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <img src="img/why-image4.jpeg" class="advantages-box__bg" alt="">
+          <div class="advantages-box__content">
+            <h3>Три варианта отделки</h3>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">получить
+              консультацию</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <img src="img/why-image5.jpeg" class="advantages-box__bg" alt="">
+          <div class="advantages-box__content">
+            <h3>Развитая инфраструктура</h3>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">получить
+              консультацию</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mb-30">
+        <div class="advantages-box">
+          <img src="img/why-image6.png" class="advantages-box__bg" alt="">
+          <div class="advantages-box__content">
+            <h3>Просторные парковки</h3>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">получить
+              консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="district-infrastructure">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 order-lg-1">
+        <div class="district-infrastructure__content">
+          <h2>Инфраструктура района</h2>
+          <div class="box-text">
+            <p>Жилой комплекс «Мой город» в Пензе - это новый уютный микрорайон в Засечном. Мы уже построили и ввели в
+              эксплуатацию 8 домов и скоро сдаем еще 2 новых строения. В квартирах «Моего города» продуманно
+              используемся каждый квадратный метр. А ценовая политики строится на принципах доступности и разумной
+              достаточности.</p>
+
+            <p>«Мой город» - это теплые кирпичные дома, собственные котельные, просторные дворы и парковки. В шаговой
+              доступности магазины, аптеки, студии красоты. Рядом строится одна из самых больших школ в городе!</p>
+          </div>
+          <h4>В 5 минутах езды расположены:</h4>
+
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <div class="district-infrastructure-item">
+                <p>Набережная Суры</p><span>с пляжами, кафе и развлечениями для детей</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="district-infrastructure-item">
+                <p>Спортивная школа</p><span>с крытым бассейном и секциями для взрослых и детей</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="district-infrastructure-item">
+                <p>Турбаза и горнолыжный склон</p><span>с бутельными подъемниками в 4 км</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="district-infrastructure-item">
+                <p>Сурское водохранилище</p><span>с красивой природой и лесным воздухом</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="district-infrastructure__map"><img src="img/map.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layouts">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h2>Планировки</h2>
+        <div class="box-text">
+          <p>Проектом предусмотрены квартиры разной площади от 38 до 108 кв.м. Планировачные решения каждой квартиры
+            продуманы до мелочей. Наши архитекторы постарались, чтобы каждый метр был полезен.</p>
+
+          <p>Пространство каждой квартиры впечатляет не только панорманым остеклением лоджий и большими окнами, но и
+            своей функциональностью</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="one-layouts-tab" data-bs-toggle="tab" data-bs-target="#one-layouts"
+                    type="button"
+                    role="tab" aria-controls="one-layouts" aria-selected="true">Все
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="two-layouts-tab" data-bs-toggle="tab" data-bs-target="#two-layouts"
+                    type="button"
+                    role="tab" aria-controls="two-layouts" aria-selected="false">1 комната
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="three-layouts-tab" data-bs-toggle="tab" data-bs-target="#three-layouts"
+                    type="button"
+                    role="tab" aria-controls="three-layouts" aria-selected="false">2 комната
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="four-layouts-tab" data-bs-toggle="tab" data-bs-target="#four-layouts"
+                    type="button"
+                    role="tab" aria-controls="four" aria-selected="false">3 комната
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="one-layouts" role="tabpanel" aria-labelledby="one-layouts-tab">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">1-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane1.png" alt=""></div>
+                  <div class="layouts-card__size">39 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">2-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane2.png" alt=""></div>
+                  <div class="layouts-card__size">49 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">2-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane1.png" alt=""></div>
+                  <div class="layouts-card__size">49 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">3-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane3.png" alt=""></div>
+                  <div class="layouts-card__size">72 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">3-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane4.png" alt=""></div>
+                  <div class="layouts-card__size">74 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">1-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane5.png" alt=""></div>
+                  <div class="layouts-card__size">89 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+                <div class="layouts-card">
+                  <img src="img/why-image4.jpeg" alt="" class="layouts-card__bg">
+                  <div class="layouts-card__title">3-комнатная</div>
+                  <div class="layouts-card__plane"><img src="img/plane6.png" alt=""></div>
+                  <div class="layouts-card__size">85 м2</div>
+
+                  <a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">оставить
+                    заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="two-layouts" role="tabpanel" aria-labelledby="two-layouts-tab">
+
+          </div>
+          <div class="tab-pane fade" id="three-layouts" role="tabpanel" aria-labelledby="three-layouts-tab">
+
+          </div>
+          <div class="tab-pane fade" id="four-layouts" role="tabpanel" aria-labelledby="four-layouts-tab">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stages-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Ход строительства</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Новости</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 mb-45">
+        <div class="news-card">
+          <a href="#" class="news-card__img"><img src="img/news1.jpeg" alt=""></a>
+          <div class="news-card__body">
+            <div class="date">3 сентября 2022</div>
+            <a href="#" class="news-card__title">Уникальный двор-сквер в нашем ЖК будет радовать всех жильцов</a>
+            <a href="#" class="btn btn-accent">читать статью</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-45">
+        <div class="news-card">
+          <a href="#" class="news-card__img"><img src="img/news2.jpeg" alt=""></a>
+          <div class="news-card__body">
+            <div class="date">5 сентября 2022</div>
+            <a href="#" class="news-card__title">Уникальный двор-сквер в нашем ЖК будет радовать всех жильцов</a>
+            <a href="#" class="btn btn-accent">читать статью</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-45">
+        <div class="news-card">
+          <a href="#" class="news-card__img"><img src="img/why-image3.jpeg" alt=""></a>
+          <div class="news-card__body">
+            <div class="date">10 сентября 2022</div>
+            <a href="#" class="news-card__title">Уникальный двор-сквер в нашем ЖК будет радовать всех жильцов</a>
+            <a href="#" class="btn btn-accent">читать статью</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-45">
+        <div class="news-card">
+          <a href="#" class="news-card__img"><img src="img/news3.jpeg" alt=""></a>
+          <div class="news-card__body">
+            <div class="date">21 сентября 2022</div>
+            <a href="#" class="news-card__title">Уникальный двор-сквер в нашем ЖК будет радовать всех жильцов</a>
+            <a href="#" class="btn btn-accent">читать статью</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="#" class="btn btn-border btn-toggle">
+          <span class="btn-text">загрузить еще</span>
+          <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="documents">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="title-wrapper">
+          <h2>Документы</h2>
+
+          <a href="#" class="btn btn-accent btn-document">
+            <span class="btn-text">Документация на Дом.рф</span>
+            <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#link"></use></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/file.svg" alt=""></div>
+          <div class="documents-box__text">
+            <a href="#" class="documents-box__title" target="_blank">Стандартный договор №1</a>
+            <div class="date">3 сентября 2022</div>
+            <a href="#" class="btn btn-accent" data-fancybox="document">смотреть</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/file.svg" alt=""></div>
+          <div class="documents-box__text">
+            <a href="#" class="documents-box__title" target="_blank">Стандартный договор №1</a>
+            <div class="date">3 сентября 2022</div>
+            <a href="#" class="btn btn-accent" data-fancybox="document">смотреть</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/file.svg" alt=""></div>
+          <div class="documents-box__text">
+            <a href="#" class="documents-box__title" target="_blank">Стандартный договор №1</a>
+            <div class="date">3 сентября 2022</div>
+            <a href="#" class="btn btn-accent" data-fancybox="document">смотреть</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/file.svg" alt=""></div>
+          <div class="documents-box__text">
+            <a href="#" class="documents-box__title" target="_blank">Стандартный договор №1</a>
+            <div class="date">3 сентября 2022</div>
+            <a href="#" class="btn btn-accent" data-fancybox="document">смотреть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper">
+          <h2>Радоваться жизни здесь и сейчас</h2>
+
+          <div class="mortgage">
+            <h3>Ставка по ипотеке от 0,01%</h3>
+
+            <form method="post" class="form-mortgage">
+              <div class="form-group">
+                <label>
+                  <input type="text" placeholder="имя" name="name">
+                </label>
+                <label>
+                  <input type="text" placeholder="phone" required name="phone">
+                </label>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-green">получить косультацию</button>
+                <div class="consent">нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-top">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+          <div class="address">
+            <div class="address-icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="address-text"><p>Пензенская обл, Пензенский р-н, с. Засечное, МКРН «Лукоморье»</p></div>
+          </div>
+
+          <div class="footer-contacts">
+            <a href="tel:+78412290077" class="phone">8 8412 <span>29 00 77</span></a>
+            <a href="tel:+79631090077" class="phone-reserve">8 963 109 00 77</a>
+          </div>
+
+          <div class="schedule">
+            <p>график работы</p><span>ПН-ПТ 9:00-20:00</span>
+          </div>
+
+          <a href="#" class="btn btn-green" data-bs-target="#callbackModal" data-bs-toggle="modal">заказать звонок</a>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="publication">Информация на сайте носит ознакомительных характер и не при каких обстоятельствах
+            не
+            является публичной офертой. Подробную информацию можно получить по телефону 8 963 109 00 77
+          </div>
+          <a href="mailto:szmoigorod@mail.ru" class="mail">szmoigorod@mail.ru</a>
+
+          <ul class="menu-document my-ul">
+            <li><a href="#">Юридическая информация</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

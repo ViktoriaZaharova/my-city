@@ -1,0 +1,465 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  padding: 191px 0 132px
+  border-radius: 0px 0px 50px 50px
+  background: url("../img/home-bg.jpeg") no-repeat center
+    size: cover
+  .mortgage
+    color: #fff
+    margin: -130px 0 0 0
+    background: rgba(15, 62, 75, 0.8)
+    backdrop-filter: blur(55px)
+    position: relative
+    z-index: 1
+
+
+.home-content
+  color: #fff
+  backdrop-filter: blur(10px)
+  border-radius: 50px
+  background: rgba(74, 192, 179, 0.8)
+  max-width: 830px
+  width: 100%
+  margin: 0 0 0 -84px
+  padding: 64px 83px 189px
+
+.start-sales
+  margin: 0 0 15px
+  font-size: 48px
+  font-weight: bold
+  line-height: 71px
+
+.start-sales-info
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.info-item
+  font-size: 24px
+  line-height: 35px
+  margin: 0 38px 20px 0
+  p
+    margin: 0 0 2px
+    font-weight: bold
+    text-transform: uppercase
+
+.readiness-stage
+  background: rgba(74, 192, 179, 0.8)
+  backdrop-filter: blur(10px)
+  border-radius: 50px
+  display: flex
+  align-items: center
+  padding: 12px 24px 5px 36px
+  width: fit-content
+  margin: auto 0 0 auto
+  font-size: 30px
+  line-height: 22px
+  font-weight: bold
+  color: #fff
+  p
+    font-size: 47px
+    line-height: 69px
+  span
+    max-width: 152px
+    margin: 0 0 0 11px
+/*==========  section home end  ==========*/
+
+/*==========  section about ==========*/
+.about
+  margin: 101px 0 73px
+  .btn
+    padding: 16px 54px
+  &-image
+    @include d-flex
+    border-radius: 25px
+    height: 535px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-content
+    max-width: 630px
+    margin: 0 auto
+
+  h2
+    font-size: 40px
+    line-height: 59px
+    margin: 0 0 22px
+    span
+      display: block
+      font-size: 96px
+      line-height: 106px
+      margin: -10px 0 0
+  .box-text
+    margin: 20px 0 40px
+
+.about-tabs
+  width: 100%
+  margin: 96px 0 0
+  .nav-tabs
+    border: none
+    margin: 0 0 36px
+    padding: 0 0 0 20px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    list-style: disc
+    font-size: 24px
+    line-height: 75px
+  .nav-link
+    padding: 0
+    color: $accent
+    font-weight: normal
+    border: none
+      radius: 0
+    &.active
+      font-weight: bold
+      color: $hover
+      background: transparent
+  .nav-item
+    margin: 0
+
+.about-tabs__content
+  width: 100%
+  background: #EDF9F7
+  border-radius: 25px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 26px 25px 26px 66px
+  &-description
+    width: calc(100% - 607px)
+    padding: 0 30px 0 0
+  &-image
+    @include d-flex
+    max-width: 607px
+    width: 100%
+    height: 560px
+    overflow: hidden
+    border-radius: 13px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h3
+    margin: 0 0 43px
+    font-size: 40px
+    font-weight: bold
+    color: $hover
+
+/*==========  section about end  ==========*/
+
+/*==========  section advantages ==========*/
+.advantages
+  margin: 0 0 78px
+  h2
+    margin: 0 0 36px
+
+.advantages-box
+  width: 100%
+  height: 100%
+  position: relative
+  z-index: 1
+  overflow: hidden
+  border-radius: 25px
+  color: #fff
+  min-height: 368px
+  .btn
+    padding: 10px 35px
+    margin: 18px 0 0
+    display: none
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%)
+    z-index: 0
+    transition: .3s ease
+  &:hover
+    &:before
+      background: linear-gradient(0deg, rgba(15, 62, 75, 0.7), rgba(15, 62, 75, 0.7))
+    .btn
+      display: flex
+    .box-text
+      display: block
+  &__content
+    position: relative
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding: 54px 50px
+  h3
+    max-width: 440px
+    font-weight: bold
+    font-size: 32px
+    line-height: 39px
+  .box-text
+    display: none
+    margin: 8px 0 0
+    font-size: 24px
+    font-weight: 350
+    max-width: 506px
+    line-height: 35px
+
+/*==========  section advantages end  ==========*/
+
+/*==========  section district-infrastructure ==========*/
+.district-infrastructure
+  margin: 0 0 94px
+  h2
+    margin: -20px 0 10px
+  &__map
+    overflow: hidden
+    @include d-flex
+    width: 100%
+    height: 880px
+    border-radius: 25px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h4
+    margin: 24px 0 23px
+    color: $accent
+    font-size: 20px
+    line-height: 29px
+
+
+.district-infrastructure-item
+  margin: 0 0 30px
+  line-height: 29px
+  font-size: 20px
+  p
+    font-size: 32px
+    font-weight: bold
+    margin: 0 0 9px
+    line-height: 30px
+/*==========  section district-infrastructure end  ==========*/
+
+/*==========  section layouts ==========*/
+.layouts
+  h2
+    margin: 0
+
+.layouts-card
+  position: relative
+  z-index: 1
+  width: 100%
+  height: 100%
+  min-height: 574px
+  border: 3px solid #4AC0B3
+    radius: 25px
+  display: flex
+  flex-direction: column
+  text-align: center
+  padding: 73px 20px 59px
+  overflow: hidden
+  font-size: 32px
+  line-height: 30px
+  color: #0F3E4B
+  font-weight: bold
+  cursor: pointer
+  &:hover
+    color: #fff
+    border-color: transparent
+    &:before
+      opacity: 1
+    .layouts-card__size
+      display: none
+    .btn
+      display: flex
+    .layouts-card__plane
+      display: none
+    .layouts-card__bg
+      opacity: 1
+
+  &__title
+    margin: 0 auto auto
+  .btn
+    padding: 16px 54px
+    margin: 0 auto
+    display: none
+  &__size
+    margin: auto auto 0
+  &__plane
+    @include d-flex
+    margin: auto
+    max-height: 287px
+    img
+      max-height: 100%
+  &__bg
+    position: absolute
+    z-index: -2
+    width: 100%
+    height: 100%
+    object-fit: cover
+    left: 0
+    top: 0
+    opacity: 0
+    transition: .3s ease
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 50%)
+    transition: .3s ease
+    width: 100%
+    height: 100%
+    z-index: -1
+    opacity: 0
+
+/*==========  section layouts end  ==========*/
+
+/*==========  section stages-work ==========*/
+.stages-work
+  margin: 36px 0 0
+  padding: 0 0 97px
+  h2
+    margin: 0 0 18px
+/*==========  section stages-work end  ==========*/
+
+/*==========  section news ==========*/
+.news
+  margin: 27px 0 0
+  h2
+    margin: 0 0 18px
+
+.news-card
+  width: 100%
+  height: 100%
+  &__img
+    overflow: hidden
+    width: 100%
+    position: relative
+    height: 368px
+    @include d-flex
+    border-radius: 25px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .date
+    margin: 18px 0 8px
+  &__title
+    margin: 0 0 20px
+    color: #0F3E4B
+    font-size: 31px
+    line-height: 31px
+    font-weight: bold
+    -webkit-line-clamp: 2
+    display: -webkit-box
+    overflow: hidden
+    -webkit-box-orient: vertical
+    &:hover
+      color: $accent
+/*==========  section news end  ==========*/
+
+/*==========  section documents ==========*/
+.documents
+  margin: 43px 0 0
+
+.documents-box
+  background: #EDF9F7
+  border-radius: 25px
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: flex-start
+  padding: 34px 30px 34px 54px
+  &__title
+    color: #0F3E4B
+    font-size: 31px
+    line-height: 31px
+    font-weight: bold
+    &:hover
+      color: $accent
+  &__icon
+    width: 31px
+    min-width: 31px
+    margin: 0 27px 0 0
+    @include d-flex
+
+.date
+  margin: 20px 0
+  color: #4AC0B3
+  font-size: 20px
+
+
+.btn-document
+  padding: 10px 35px
+  font-size: 20px
+  font-weight: normal
+  .btn-icon
+    margin: 0 0 0 10px
+    width: 15px
+    height: 15px
+    min-width: 15px
+    fill: #fff
+
+
+.form-mortgage
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  label
+    width: 297px
+  .btn
+    padding: 14px 34px
+/*==========  section documents end  ==========*/
+
+/*==========  section callback ==========*/
+.callback
+  margin: 76px 0
+  h2
+    color: #fff
+    max-width: 609px
+    width: 100%
+    font-size: 128px
+    line-height: 106px
+
+.callback-wrapper
+  padding: 130px 76px 130px 96px
+  border-radius: 25px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  color: #fff
+  background: linear-gradient(90deg, #4AC0B3 0%, rgba(74, 192, 179, 0) 93.4%), url('../img/news3.jpeg') no-repeat center
+    size: cover
+
+.mortgage
+  max-width: 640px
+  width: 100%
+  background: rgba(74, 192, 179, 0.8)
+  backdrop-filter: blur(10px)
+  border-radius: 50px
+  padding: 32px 30px 42px 38px
+  h3
+    margin: 0 0 25px
+    width: 100%
+    font-size: 36px
+    font-weight: bold
+
+/*==========  section end callback ==========*/

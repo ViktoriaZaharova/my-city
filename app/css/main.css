@@ -1,0 +1,574 @@
+/*==========  section home ==========*/
+.home {
+  padding: 191px 0 132px;
+  border-radius: 0px 0px 50px 50px;
+  background: url("../img/home-bg.jpeg") no-repeat center;
+    background-size: cover; }
+  .home .mortgage {
+    color: #fff;
+    margin: -130px 0 0 0;
+    background: rgba(15, 62, 75, 0.8);
+    -webkit-backdrop-filter: blur(55px);
+            backdrop-filter: blur(55px);
+    position: relative;
+    z-index: 1; }
+
+.home-content {
+  color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  background: rgba(74, 192, 179, 0.8);
+  max-width: 830px;
+  width: 100%;
+  margin: 0 0 0 -84px;
+  padding: 64px 83px 189px; }
+
+.start-sales {
+  margin: 0 0 15px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 71px; }
+
+.start-sales-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.info-item {
+  font-size: 24px;
+  line-height: 35px;
+  margin: 0 38px 20px 0; }
+  .info-item p {
+    margin: 0 0 2px;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.readiness-stage {
+  background: rgba(74, 192, 179, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px 5px 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto 0 0 auto;
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #fff; }
+  .readiness-stage p {
+    font-size: 47px;
+    line-height: 69px; }
+  .readiness-stage span {
+    max-width: 152px;
+    margin: 0 0 0 11px; }
+
+/*==========  section home end  ==========*/
+/*==========  section about ==========*/
+.about {
+  margin: 101px 0 73px; }
+  .about .btn {
+    padding: 16px 54px; }
+  .about-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 25px;
+    height: 535px;
+    overflow: hidden; }
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .about-content {
+    max-width: 630px;
+    margin: 0 auto; }
+  .about h2 {
+    font-size: 40px;
+    line-height: 59px;
+    margin: 0 0 22px; }
+    .about h2 span {
+      display: block;
+      font-size: 96px;
+      line-height: 106px;
+      margin: -10px 0 0; }
+  .about .box-text {
+    margin: 20px 0 40px; }
+
+.about-tabs {
+  width: 100%;
+  margin: 96px 0 0; }
+  .about-tabs .nav-tabs {
+    border: none;
+    margin: 0 0 36px;
+    padding: 0 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    list-style: disc;
+    font-size: 24px;
+    line-height: 75px; }
+  .about-tabs .nav-link {
+    padding: 0;
+    color: #4AC0B3;
+    font-weight: normal;
+    border: none;
+      border-radius: 0; }
+    .about-tabs .nav-link.active {
+      font-weight: bold;
+      color: #0F3E4B;
+      background: transparent; }
+  .about-tabs .nav-item {
+    margin: 0; }
+
+.about-tabs__content {
+  width: 100%;
+  background: #EDF9F7;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 26px 25px 26px 66px; }
+  .about-tabs__content-description {
+    width: calc(100% - 607px);
+    padding: 0 30px 0 0; }
+  .about-tabs__content-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 607px;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    border-radius: 13px; }
+    .about-tabs__content-image img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .about-tabs__content h3 {
+    margin: 0 0 43px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0F3E4B; }
+
+/*==========  section about end  ==========*/
+/*==========  section advantages ==========*/
+.advantages {
+  margin: 0 0 78px; }
+  .advantages h2 {
+    margin: 0 0 36px; }
+
+.advantages-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 25px;
+  color: #fff;
+  min-height: 368px; }
+  .advantages-box .btn {
+    padding: 10px 35px;
+    margin: 18px 0 0;
+    display: none; }
+  .advantages-box__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1; }
+  .advantages-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(47.42%, rgba(15, 62, 75, 0)));
+    background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%);
+    z-index: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .advantages-box:hover:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(15, 62, 75, 0.7)), to(rgba(15, 62, 75, 0.7)));
+    background: linear-gradient(0deg, rgba(15, 62, 75, 0.7), rgba(15, 62, 75, 0.7)); }
+  .advantages-box:hover .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .advantages-box:hover .box-text {
+    display: block; }
+  .advantages-box__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 54px 50px; }
+  .advantages-box h3 {
+    max-width: 440px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px; }
+  .advantages-box .box-text {
+    display: none;
+    margin: 8px 0 0;
+    font-size: 24px;
+    font-weight: 350;
+    max-width: 506px;
+    line-height: 35px; }
+
+/*==========  section advantages end  ==========*/
+/*==========  section district-infrastructure ==========*/
+.district-infrastructure {
+  margin: 0 0 94px; }
+  .district-infrastructure h2 {
+    margin: -20px 0 10px; }
+  .district-infrastructure__map {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 880px;
+    border-radius: 25px; }
+    .district-infrastructure__map img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .district-infrastructure h4 {
+    margin: 24px 0 23px;
+    color: #4AC0B3;
+    font-size: 20px;
+    line-height: 29px; }
+
+.district-infrastructure-item {
+  margin: 0 0 30px;
+  line-height: 29px;
+  font-size: 20px; }
+  .district-infrastructure-item p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 9px;
+    line-height: 30px; }
+
+/*==========  section district-infrastructure end  ==========*/
+/*==========  section layouts ==========*/
+.layouts h2 {
+  margin: 0; }
+
+.layouts-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 574px;
+  border: 3px solid #4AC0B3;
+    border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 73px 20px 59px;
+  overflow: hidden;
+  font-size: 32px;
+  line-height: 30px;
+  color: #0F3E4B;
+  font-weight: bold;
+  cursor: pointer; }
+  .layouts-card:hover {
+    color: #fff;
+    border-color: transparent; }
+    .layouts-card:hover:before {
+      opacity: 1; }
+    .layouts-card:hover .layouts-card__size {
+      display: none; }
+    .layouts-card:hover .btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .layouts-card:hover .layouts-card__plane {
+      display: none; }
+    .layouts-card:hover .layouts-card__bg {
+      opacity: 1; }
+  .layouts-card__title {
+    margin: 0 auto auto; }
+  .layouts-card .btn {
+    padding: 16px 54px;
+    margin: 0 auto;
+    display: none; }
+  .layouts-card__size {
+    margin: auto auto 0; }
+  .layouts-card__plane {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    max-height: 287px; }
+    .layouts-card__plane img {
+      max-height: 100%; }
+  .layouts-card__bg {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .layouts-card:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(50%, rgba(15, 62, 75, 0)));
+    background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 50%);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0; }
+
+/*==========  section layouts end  ==========*/
+/*==========  section stages-work ==========*/
+.stages-work {
+  margin: 36px 0 0;
+  padding: 0 0 97px; }
+  .stages-work h2 {
+    margin: 0 0 18px; }
+
+/*==========  section stages-work end  ==========*/
+/*==========  section news ==========*/
+.news {
+  margin: 27px 0 0; }
+  .news h2 {
+    margin: 0 0 18px; }
+
+.news-card {
+  width: 100%;
+  height: 100%; }
+  .news-card__img {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 368px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 25px; }
+    .news-card__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .news-card .date {
+    margin: 18px 0 8px; }
+  .news-card__title {
+    margin: 0 0 20px;
+    color: #0F3E4B;
+    font-size: 31px;
+    line-height: 31px;
+    font-weight: bold;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical; }
+    .news-card__title:hover {
+      color: #4AC0B3; }
+
+/*==========  section news end  ==========*/
+/*==========  section documents ==========*/
+.documents {
+  margin: 43px 0 0; }
+
+.documents-box {
+  background: #EDF9F7;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 34px 30px 34px 54px; }
+  .documents-box__title {
+    color: #0F3E4B;
+    font-size: 31px;
+    line-height: 31px;
+    font-weight: bold; }
+    .documents-box__title:hover {
+      color: #4AC0B3; }
+  .documents-box__icon {
+    width: 31px;
+    min-width: 31px;
+    margin: 0 27px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.date {
+  margin: 20px 0;
+  color: #4AC0B3;
+  font-size: 20px; }
+
+.btn-document {
+  padding: 10px 35px;
+  font-size: 20px;
+  font-weight: normal; }
+  .btn-document .btn-icon {
+    margin: 0 0 0 10px;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    fill: #fff; }
+
+.form-mortgage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form-mortgage label {
+    width: 297px; }
+  .form-mortgage .btn {
+    padding: 14px 34px; }
+
+/*==========  section documents end  ==========*/
+/*==========  section callback ==========*/
+.callback {
+  margin: 76px 0; }
+  .callback h2 {
+    color: #fff;
+    max-width: 609px;
+    width: 100%;
+    font-size: 128px;
+    line-height: 106px; }
+
+.callback-wrapper {
+  padding: 130px 76px 130px 96px;
+  border-radius: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#4AC0B3), color-stop(93.4%, rgba(74, 192, 179, 0))), url("../img/news3.jpeg") no-repeat center;
+  background: linear-gradient(90deg, #4AC0B3 0%, rgba(74, 192, 179, 0) 93.4%), url("../img/news3.jpeg") no-repeat center;
+    background-size: cover; }
+
+.mortgage {
+  max-width: 640px;
+  width: 100%;
+  background: rgba(74, 192, 179, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 32px 30px 42px 38px; }
+  .mortgage h3 {
+    margin: 0 0 25px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold; }
+
+/*==========  section end callback ==========*/
