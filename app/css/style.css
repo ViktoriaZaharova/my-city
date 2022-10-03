@@ -126,6 +126,10 @@ input, textarea, select {
             box-shadow: none;
     border-color: #0F3E4B; }
 
+textarea {
+  padding: 10px 20px;
+  height: 100px; }
+
 label {
   display: block;
   width: 100%;
@@ -323,3 +327,34 @@ h2 {
     margin: 0 21px 20px 0; }
     .nav-tabs .nav-item:last-child {
       margin: 0 0 20px; }
+
+.slick-slider {
+  width: 100%; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-arrow {
+  z-index: 1;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #4AC0B3;
+    border-radius: 50%;
+  padding: 17px;
+  stroke: #4AC0B3;
+  fill: none;
+  background: transparent; }
+  .slick-arrow:hover {
+    background: #0F3E4B;
+    border-color: #0F3E4B;
+    stroke: #4AC0B3; }

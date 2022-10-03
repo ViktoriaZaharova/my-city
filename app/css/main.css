@@ -140,6 +140,7 @@
     padding: 0;
     color: #4AC0B3;
     font-weight: normal;
+    text-align: left;
     border: none;
       border-radius: 0; }
     .about-tabs .nav-link.active {
@@ -404,10 +405,96 @@
 /*==========  section layouts end  ==========*/
 /*==========  section stages-work ==========*/
 .stages-work {
-  margin: 36px 0 0;
-  padding: 0 0 97px; }
+  margin: 36px 0 0; }
   .stages-work h2 {
     margin: 0 0 18px; }
+  .stages-work .nav-tabs {
+    margin: 0;
+    position: relative;
+    z-index: 1; }
+  .stages-work .tab-content {
+    padding: 0 0 97px;
+    border-bottom: 1px solid #4AC0B3; }
+
+.gallery-hidden {
+  display: none; }
+
+.stages-work-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  height: 291px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 23px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1; }
+  .stages-work-item .btn-view {
+    display: none; }
+  .stages-work-item:hover .btn-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .stages-work-item:hover:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(15, 62, 75, 0.8)), to(rgba(15, 62, 75, 0.8)));
+    background: linear-gradient(0deg, rgba(15, 62, 75, 0.8), rgba(15, 62, 75, 0.8)); }
+  .stages-work-item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2; }
+  .stages-work-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), to(rgba(15, 62, 75, 0)));
+    background: linear-gradient(0deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 100%);
+    z-index: -1; }
+
+.btn-view {
+  margin: auto;
+  padding: 16px 34px;
+  position: relative; }
+  .btn-view:after {
+    content: '';
+    margin: 0 0 0 20px;
+    width: 36px;
+    height: 23px;
+    background: url("../img/view.svg") no-repeat center;
+      background-size: 100%; }
+
+.stages-work-slider {
+  padding: 100px 0 0;
+  margin: -70px 0 0; }
+  .stages-work-slider .slick-slide {
+    padding: 0 15px; }
+  .stages-work-slider .slick-list {
+    margin: 0 -15px; }
+  .stages-work-slider .slick-arrow {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .stages-work-slider .slick-prev {
+    right: 80px; }
 
 /*==========  section stages-work end  ==========*/
 /*==========  section news ==========*/

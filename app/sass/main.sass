@@ -114,6 +114,7 @@
     padding: 0
     color: $accent
     font-weight: normal
+    text-align: left
     border: none
       radius: 0
     &.active
@@ -331,9 +332,86 @@
 /*==========  section stages-work ==========*/
 .stages-work
   margin: 36px 0 0
-  padding: 0 0 97px
   h2
     margin: 0 0 18px
+  .nav-tabs
+    margin: 0
+    position: relative
+    z-index: 1
+  .tab-content
+    padding: 0 0 97px
+    border-bottom: 1px solid #4AC0B3
+
+.gallery-hidden
+  display: none
+
+.stages-work-item
+  position: relative
+  overflow: hidden
+  border-radius: 25px
+  height: 291px
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  padding: 23px
+  text-align: center
+  font-size: 24px
+  font-weight: bold
+  color: #fff
+  z-index: 1
+  .btn-view
+    display: none
+  &:hover
+    .btn-view
+      display: flex
+    &:before
+      background: linear-gradient(0deg, rgba(15, 62, 75, 0.8), rgba(15, 62, 75, 0.8))
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -2
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 100%)
+    z-index: -1
+
+
+.btn-view
+  margin: auto
+  padding: 16px 34px
+  position: relative
+  &:after
+    content: ''
+    margin: 0 0 0 20px
+    width: 36px
+    height: 23px
+    background: url("../img/view.svg") no-repeat center
+      size: 100%
+
+.stages-work-slider
+  padding: 100px 0 0
+  margin: -70px 0 0
+
+  .slick-slide
+    padding: 0 15px
+  .slick-list
+    margin: 0 -15px
+  .slick-arrow
+    position: absolute
+    top: 0
+    right: 0
+  .slick-prev
+    right: 80px
 /*==========  section stages-work end  ==========*/
 
 /*==========  section news ==========*/

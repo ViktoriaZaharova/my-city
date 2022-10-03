@@ -83,6 +83,13 @@ header {
     .mobile-menu__close:after {
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
+  .mobile-menu .footer-contacts {
+    margin: 20px 0; }
+  .mobile-menu .address {
+    font-size: 16px; }
+    .mobile-menu .address-icon {
+      width: 20px;
+      min-width: 20px; }
 
 .menu {
   font-size: 20px;

@@ -104,6 +104,63 @@ footer
 
 
 
-/*==========  section  ==========*/
+/*==========  section modal ==========*/
+.modal-dialog
+  max-width: 400px
 
-/*==========  section end  ==========*/
+.modal-header
+  padding: 0
+  border: none
+  flex-wrap: wrap
+  margin: 0 0 20px
+  .btn-close
+    z-index: 1
+    cursor: pointer
+    margin: 0
+    padding: 0
+    border: none
+      radius: 0
+    top: 20px
+    right: 20px
+    position: absolute
+    background: transparent
+    opacity: 1
+    &:before, &:after
+      content: ''
+      border: none
+      position: absolute
+      top: 0
+      left: 7px
+      width: 2px
+      height: 100%
+      border-radius: 3px
+      background: $hover
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-title
+  font-family: $font
+  text-align: center
+  margin: 0 auto
+  color: $hover
+  font-size: 26px
+
+.modal-body
+  padding: 0
+
+.modal-content
+  padding: 30px
+
+.form
+  input
+    border-color: $accent
+    color: $hover
+    &::placeholder
+      color: $hover
+  label
+    max-width: none
+  button
+    margin: 20px auto 0
+/*==========  section modal end  ==========*/

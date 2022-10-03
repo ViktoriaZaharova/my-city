@@ -92,6 +92,9 @@ input, textarea, select
     box-shadow: none
     border-color: $hover
 
+textarea
+  padding: 10px 20px
+  height: 100px
 
 label
   display: block
@@ -272,4 +275,27 @@ h2
     margin: 0 21px 20px 0
     &:last-child
       margin: 0 0 20px
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-arrow
+  z-index: 1
+  opacity: 1
+  @include d-flex
+  width: 54px
+  height: 54px
+  border: 1px solid #4AC0B3
+    radius: 50%
+  padding: 17px
+  stroke: $accent
+  fill: none
+  background: transparent
+  &:hover
+    background: $hover
+    border-color: $hover
+    stroke: $accent
 
