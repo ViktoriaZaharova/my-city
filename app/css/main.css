@@ -19,10 +19,11 @@
           backdrop-filter: blur(10px);
   border-radius: 50px;
   background: rgba(74, 192, 179, 0.8);
-  max-width: 830px;
+  max-width: 878px;
+  min-width: 878px;
   width: 100%;
   margin: 0 0 0 -84px;
-  padding: 64px 83px 189px; }
+  padding: 64px 80px 189px; }
 
 .start-sales {
   margin: 0 0 15px;
@@ -275,7 +276,10 @@
 .district-infrastructure {
   margin: 0 0 94px; }
   .district-infrastructure h2 {
-    margin: -20px 0 10px; }
+    margin: 0 0 20px;
+    font-size: 32px;
+    line-height: 30px;
+    text-transform: uppercase; }
   .district-infrastructure__map {
     overflow: hidden;
     display: -webkit-box;
@@ -619,13 +623,14 @@
   margin: 76px 0; }
   .callback h2 {
     color: #fff;
-    max-width: 609px;
+    max-width: 731px;
     width: 100%;
     font-size: 128px;
-    line-height: 106px; }
+    line-height: 106px;
+    font-weight: bold; }
 
 .callback-wrapper {
-  padding: 130px 76px 130px 96px;
+  padding: 130px 66px 130px 76px;
   border-radius: 25px;
   width: 100%;
   display: -webkit-box;
