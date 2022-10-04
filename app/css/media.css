@@ -90,7 +90,8 @@
   .home .mortgage {
     margin: -130px auto 0; }
   h1 {
-    font-size: 100px; } }
+    font-size: 100px;
+    line-height: .9; } }
 
 @media only screen and (max-width: 1300px) {
   .nav-tabs .nav-link {
@@ -120,11 +121,13 @@
     padding: 30px 40px 160px; }
   h1 {
     font-size: 70px;
-    line-height: 1; }
+    line-height: .8; }
   .readiness-stage {
     font-size: 24px; }
     .readiness-stage p {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .about .btn {
+    padding: 15px 30px; } }
 
 @media only screen and (max-width: 1200px) {
   footer {
@@ -200,15 +203,35 @@
     font-size: 18px; }
   .mobile-menu__close {
     margin: 0 0 20px auto; }
+  .home .mortgage {
+    border-radius: 20px;
+    padding: 30px; }
+    .home .mortgage h3 {
+      text-align: center;
+      font-size: 30px; }
+  .home .form-mortgage label {
+    max-width: none;
+    width: 100%; }
+  .home .form-mortgage button {
+    margin: 0 auto; }
+  .home .form-group {
+    width: 100%;
+    margin: 0 0 12px; }
   .home-content {
     max-width: none;
-    text-align: center; }
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 30px 160px; }
+  .info-item {
+    font-size: 20px;
+    line-height: normal;
+    margin: 0 20px 10px 0; }
   .start-sales-info {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .readiness-stage {
-    margin: 30px auto 0; } }
+  h1 {
+    font-size: 60px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -262,13 +285,10 @@
       padding: 8px 14px; }
   .layouts h2 {
     margin: 0 0 20px; }
-  .box-text {
-    font-size: 16px;
-    line-height: 1.3; }
-    .box-text p {
-      margin: 0 0 20px; }
-      .box-text p:last-child {
-        margin: 0; }
+  .box-text p {
+    margin: 0 0 20px; }
+    .box-text p:last-child {
+      margin: 0; }
   .layouts-card {
     font-size: 24px; }
   .district-infrastructure h2 {
@@ -312,7 +332,34 @@
   .header-logo {
     padding: 10px 14px 14px; }
   header {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  .mobile-menu {
+    height: calc(100% - 121px);
+    top: 121px; }
+  .readiness-stage {
+    margin: 30px auto 0;
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 30px; }
+    .readiness-stage p {
+      font-size: 30px;
+      line-height: 1; }
+    .readiness-stage span {
+      max-width: 100px; }
+  .home {
+    border-radius: 0;
+    padding: 300px 0 70px;
+    background: url("../img/home-bg-mobile.jpg") no-repeat center;
+      background-size: cover; }
+    .home .mortgage {
+      display: none; }
+  .home-content {
+    padding: 30px; }
+    .home-content .btn {
+      margin: 20px auto 0; }
+  h1 {
+    font-size: 40px;
+    margin: 0 auto 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -354,10 +401,10 @@
     margin-bottom: 10px; }
     .nav-tabs .nav-item:last-child {
       margin-bottom: 10px; }
-  .district-infrastructure-item {
-    font-size: 16px; }
-    .district-infrastructure-item p {
-      font-size: 20px; }
+  .district-infrastructure-item p {
+    font-size: 22px; }
+  .district-infrastructure__map {
+    height: 500px; }
   .about-tabs__content-description {
     width: 1005px;
     padding: 0;
@@ -379,7 +426,72 @@
     margin-right: 20px; }
   h1 {
     font-size: 50px;
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+  .layouts-card {
+    color: #fff;
+    min-height: 350px; }
+    .layouts-card__plane {
+      display: none; }
+    .layouts-card__bg {
+      opacity: 1; }
+    .layouts-card__title {
+      margin: 0 auto 20px; }
+    .layouts-card__size {
+      margin: 0 auto auto; }
+    .layouts-card .btn {
+      position: relative;
+      bottom: 0;
+      padding: 10px 20px; }
+  .layouts-slider, .advantages-slider {
+    margin: 0;
+    display: block; }
+    .layouts-slider > *, .advantages-slider > * {
+      padding: 0; }
+    .layouts-slider .slick-slide, .advantages-slider .slick-slide {
+      margin: 0 10px 0 0;
+      width: 235px; }
+  .slick-arrow-my {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    background: #fff;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+    .slick-arrow-my.slick-prev {
+      left: 0; }
+    .slick-arrow-my.slick-next {
+      right: 0;
+      left: auto; }
+  .advantages-slider {
+    padding: 0 0 50px; }
+    .advantages-slider .slick-track {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .advantages-slider .slick-slide {
+      width: 280px;
+      height: auto; }
+    .advantages-slider .slick-arrow-my {
+      top: auto;
+      bottom: 0;
+      -webkit-transform: none;
+              transform: none; }
+      .advantages-slider .slick-arrow-my.slick-prev {
+        left: calc(50% - 50px); }
+      .advantages-slider .slick-arrow-my.slick-next {
+        right: calc(50% - 50px); }
+  .advantages-box {
+    min-height: auto;
+    height: 100%; }
+    .advantages-box .box-text {
+      opacity: 1;
+      height: auto; }
+    .advantages-box:before {
+      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(77.42%, rgba(15, 62, 75, 0)));
+      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 77.42%); } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -429,12 +541,20 @@
   .documents h2 {
     width: 100%;
     margin: 0 0 10px; }
-  .documents-box__title {
-    font-size: 20px; }
+  .documents-box {
+    padding: 0;
+    background: transparent;
+    border-radius: 0; }
+    .documents-box .date {
+      margin: 10px 0; }
+    .documents-box__title {
+      font-size: 20px; }
   .news-card__title {
     font-size: 20px; }
   .date {
     line-height: 1; }
+  .advantages-box .box-text {
+    font-size: 18px; }
   .advantages-box h3 {
     font-size: 20px; }
   .header-logo {
@@ -443,31 +563,53 @@
     padding: 8px 20px;
     margin: 0 20px 0 0; }
   .btn-burger {
-    width: 30px; }
+    width: 30px;
+    height: 24px; }
+    .btn-burger span {
+      height: 3px; }
+    .btn-burger.open span {
+      top: 10px; }
   .info-item {
-    margin-right: 0;
-    width: 100%; }
+    margin-right: 0; }
+  .start-sales-info {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .modal-dialog {
-    margin: 10px auto; } }
+    margin: 10px auto; }
+  .mobile-menu {
+    height: calc(100% - 96px);
+    top: 96px; }
+  h1 {
+    font-size: 30px;
+    margin: 0 auto 20px; }
+  .home-content {
+    padding: 30px 20px; }
+  .btn-all {
+    margin: 0 auto;
+    width: 100%; }
+  .about-image {
+    height: auto; }
+  .about-tabs .nav-tabs {
+    font-size: 18px;
+    line-height: 1;
+    list-style: none;
+    padding: 0; }
+    .about-tabs .nav-tabs .nav-item {
+      margin-right: 0;
+      width: 50%; }
+    .about-tabs .nav-tabs .nav-link {
+      line-height: 1; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
   header .btn {
     display: none; }
-  h1 {
-    font-size: 40px; }
   .home {
-    border-radius: 0;
-    padding: 151px 0 82px; }
-  .readiness-stage {
-    font-size: 20px; }
-    .readiness-stage p {
-      font-size: 30px;
-      line-height: 1.4; }
+    padding: 300px 0 50px; }
   .start-sales {
     font-size: 24px; }
   .info-item {
-    font-size: 18px; } }
+    font-size: 17px; } }
 
 @media only screen and (max-width: 350px) {
   .schedule {

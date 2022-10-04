@@ -2,6 +2,8 @@
 header {
   position: absolute;
   z-index: 3;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
   left: 0;
   top: 0;
   width: 100%;
@@ -28,6 +30,8 @@ header {
     color: #0F3E4B;
     font-size: 24px;
     margin: -10px 0 0; }
+  header.active {
+    background: #fff; }
 
 .header-logo {
   background: #fff;
@@ -43,21 +47,44 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  fill: #fff; }
-  .btn-burger:hover {
-    fill: #0F3E4B; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+  .btn-burger span {
+    width: 100%;
+    height: 7px;
+    background: #0F3E4B;
+    border-radius: 5px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .btn-burger:hover span {
+    background: #0F3E4B; }
+  .btn-burger.open span {
+    position: absolute;
+    top: 17px;
+    left: 0; }
+    .btn-burger.open span:nth-child(2) {
+      width: 0; }
+    .btn-burger.open span:first-child {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .btn-burger.open span:last-child {
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg); }
 
 /*==========  section header end  ==========*/
 /*==========  section mobile-menu ==========*/
 .mobile-menu {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 198px;
   z-index: 4;
-  height: 100%;
+  height: calc(100% - 198px);
   background: #fff;
   overflow-y: auto;
   padding: 30px;

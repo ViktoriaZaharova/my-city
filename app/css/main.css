@@ -121,6 +121,7 @@
   width: 100%;
   margin: 96px 0 0; }
   .about-tabs .nav-tabs {
+    list-style-type: disc;
     border: none;
     margin: 0 0 36px;
     padding: 0 0 0 20px;
@@ -134,7 +135,6 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    list-style: disc;
     font-size: 24px;
     line-height: 75px; }
   .about-tabs .nav-link {
@@ -211,17 +211,15 @@
   min-height: 368px; }
   .advantages-box .btn {
     padding: 10px 35px;
-    margin: 18px 0 0;
-    display: none; }
+    margin: 18px 0 0; }
   .advantages-box__bg {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: .7s ease;
+    transition: .7s ease; }
   .advantages-box:before {
     content: '';
     position: absolute;
@@ -231,22 +229,23 @@
     height: 100%;
     background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(47.42%, rgba(15, 62, 75, 0)));
     background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%);
-    z-index: 0;
+    z-index: 1;
     -webkit-transition: .3s ease;
     transition: .3s ease; }
+  .advantages-box:hover .advantages-box__bg {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
   .advantages-box:hover:before {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(15, 62, 75, 0.7)), to(rgba(15, 62, 75, 0.7)));
     background: linear-gradient(0deg, rgba(15, 62, 75, 0.7), rgba(15, 62, 75, 0.7)); }
-  .advantages-box:hover .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .advantages-box:hover .box-text {
-    display: block; }
+  .advantages-box:hover .advantages-box__content {
+    margin: 0; }
+  .advantages-box:hover .box-text, .advantages-box:hover .btn {
+    height: auto;
+    opacity: 1; }
   .advantages-box__content {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -257,19 +256,26 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding: 54px 50px; }
+    padding: 54px 50px;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    bottom: 0;
+    z-index: 1; }
   .advantages-box h3 {
     max-width: 440px;
     font-weight: bold;
     font-size: 32px;
     line-height: 39px; }
   .advantages-box .box-text {
-    display: none;
     margin: 8px 0 0;
     font-size: 24px;
     font-weight: 350;
     max-width: 506px;
-    line-height: 35px; }
+    line-height: 35px;
+    opacity: 0;
+    height: 0;
+    -webkit-transition: .7s ease;
+    transition: .7s ease; }
 
 /*==========  section advantages end  ==========*/
 /*==========  section district-infrastructure ==========*/
@@ -351,19 +357,32 @@
     .layouts-card:hover .layouts-card__size {
       display: none; }
     .layouts-card:hover .btn {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
+      position: relative;
+      bottom: auto; }
     .layouts-card:hover .layouts-card__plane {
-      display: none; }
+      -webkit-transform: scale(0) translate3d(0, 0, 0);
+              transform: scale(0) translate3d(0, 0, 0); }
+    .layouts-card:hover .layouts-card__title {
+      color: #fff;
+      -webkit-transform: translate3d(0, -12px, 0);
+              transform: translate3d(0, -12px, 0); }
     .layouts-card:hover .layouts-card__bg {
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none; }
   .layouts-card__title {
-    margin: 0 auto auto; }
+    margin: 0 auto auto;
+    -webkit-transition: opacity .25s ease, -webkit-transform .25s ease;
+    transition: opacity .25s ease, -webkit-transform .25s ease;
+    transition: opacity .25s ease, transform .25s ease;
+    transition: opacity .25s ease, transform .25s ease, -webkit-transform .25s ease; }
   .layouts-card .btn {
     padding: 16px 54px;
-    margin: 0 auto;
-    display: none; }
+    position: absolute;
+    bottom: -100%;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    margin: 0 auto; }
   .layouts-card__size {
     margin: auto auto 0; }
   .layouts-card__plane {
@@ -381,17 +400,18 @@
     .layouts-card__plane img {
       max-height: 100%; }
   .layouts-card__bg {
+    -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+            transform: scale(1.1) translate3d(0, 0, 0);
     position: absolute;
-    z-index: -2;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    left: 0;
-    top: 0;
+    z-index: -1;
     opacity: 0;
-    -webkit-transition: .3s ease;
-    transition: .3s ease; }
+    transition: opacity .35s ease,transform .35s ease,-webkit-transform .35s ease; }
   .layouts-card:before {
     content: '';
     position: absolute;
@@ -542,8 +562,11 @@
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical; }
-    .news-card__title:hover {
-      color: #4AC0B3; }
+  .news-card:hover .news-card__title {
+    color: #4AC0B3; }
+  .news-card:hover .news-card__img {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
 
 /*==========  section news end  ==========*/
 /*==========  section documents ==========*/
