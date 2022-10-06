@@ -242,7 +242,7 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding: 54px 50px;
+    padding: 50px 44px;
     -webkit-transition: .7s ease;
     transition: .7s ease;
     z-index: 1; }
@@ -253,10 +253,10 @@
     line-height: 39px; }
   .advantages-box .box-text {
     margin: 8px 0 0;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 350;
     max-width: 506px;
-    line-height: 35px;
+    line-height: 26px;
     -webkit-transition: .7s ease;
     transition: .7s ease;
     display: none; }
