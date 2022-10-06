@@ -120,36 +120,19 @@
 .about-tabs {
   width: 100%;
   margin: 96px 0 0; }
-  .about-tabs .nav-tabs {
-    list-style-type: disc;
-    border: none;
-    margin: 0 0 36px;
-    padding: 0 0 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    font-size: 24px;
-    line-height: 75px; }
-  .about-tabs .nav-link {
-    padding: 0;
+
+.about-slider-nav {
+  font-size: 24px;
+  line-height: 75px;
+  margin: 0 0 36px; }
+  .about-slider-nav .slick-current .about-slider-nav-item {
     color: #4AC0B3;
-    font-weight: normal;
-    text-align: left;
-    border: none;
-      border-radius: 0; }
-    .about-tabs .nav-link.active {
-      font-weight: bold;
-      color: #0F3E4B;
-      background: transparent; }
-  .about-tabs .nav-item {
-    margin: 0; }
+    font-weight: bold; }
+  .about-slider-nav .slick-slide {
+    border: none; }
+
+.about-slider-nav-item {
+  cursor: pointer; }
 
 .about-tabs__content {
   width: 100%;
@@ -190,6 +173,7 @@
   .about-tabs__content h3 {
     margin: 0 0 43px;
     font-size: 40px;
+    line-height: 1;
     font-weight: bold;
     color: #0F3E4B; }
 

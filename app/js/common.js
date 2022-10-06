@@ -4,11 +4,11 @@ $('.btn-burger').on('click', function (e) {
     e.preventDefault();
     $('header').toggleClass('active');
     $(this).toggleClass('open');
-   $('.mobile-menu').fadeToggle();
+    $('.mobile-menu').fadeToggle();
 });
 
 
-$('[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
+$('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
     $('.slick-slider').slick('setPosition');
 });
 
@@ -116,20 +116,53 @@ $('.stages-work-slider-4').slick({
     ]
 });
 
+$('.about-slider-nav').slick({
+    slidesToShow: 7,
+    vertical: true,
+    focusOnSelect: true,
+    asNavFor: '.about-slider',
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: true,
+                vertical: false,
+            }
+        }
+    ]
+});
+
+$('.about-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                swipe: true,
+                asNavFor: '.about-slider-nav',
+            }
+        }
+    ]
+});
+
+
 // slick active
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 768) {
         $('.layouts-slider:not(.slick-initialized)').slick({
             slidesToShow: 1,
             variableWidth: true,
-            prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-            nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            arrows: false,
         });
         $('.advantages-slider:not(.slick-initialized)').slick({
             slidesToShow: 1,
             variableWidth: true,
-            prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-            nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            arrows: false
         });
 
 

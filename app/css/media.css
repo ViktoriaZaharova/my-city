@@ -53,7 +53,7 @@
     margin: 0 0 24px;
     line-height: 1; }
     .district-infrastructure-item p {
-      font-size: 26px;
+      font-size: 22px;
       line-height: 1; }
   h2 {
     line-height: 1;
@@ -82,8 +82,9 @@
     max-width: none; }
   .about-tabs {
     margin: 60px 0 0; }
-    .about-tabs .nav-tabs {
-      font-size: 20px; }
+  .about-slider-nav {
+    line-height: 55px;
+    font-size: 20px; }
   .home-content {
     margin: 0;
     min-width: auto; }
@@ -100,16 +101,13 @@
     margin: 15px 0 20px; }
   .about-tabs {
     line-height: normal; }
-    .about-tabs .nav-link {
-      padding: 0;
-      font-size: 18px;
-      line-height: normal; }
-    .about-tabs .nav-item {
+  .about-slider-nav {
+    line-height: normal;
+    font-size: 18px; }
+    .about-slider-nav .slick-slide {
       margin: 0 0 20px; }
-      .about-tabs .nav-item:last-child {
+      .about-slider-nav .slick-slide:last-child {
         margin: 0; }
-  .about-tabs .nav-tabs {
-    line-height: normal; }
   header .address {
     margin: 0 30px; }
   header .btn {
@@ -299,6 +297,7 @@
     max-width: none;
     margin: 30px 0 0; }
   .about .btn {
+    margin: 30px auto 0;
     padding: 14px 24px; }
   .about h2 {
     font-size: 30px; }
@@ -329,6 +328,12 @@
         margin: 0 0 10px; }
   .about-tabs .tab-content {
     margin: 30px 0 0; }
+  .about-slider-nav {
+    font-size: 20px; }
+    .about-slider-nav .slick-slide {
+      margin: 0 20px 0 0; }
+      .about-slider-nav .slick-slide:last-child {
+        margin: 0 20px 0 0; }
   .header-logo {
     padding: 10px 14px 14px; }
   header {
@@ -401,10 +406,13 @@
     margin-bottom: 10px; }
     .nav-tabs .nav-item:last-child {
       margin-bottom: 10px; }
-  .district-infrastructure-item p {
-    font-size: 22px; }
+  .district-infrastructure-item {
+    font-size: 16px; }
+    .district-infrastructure-item p {
+      font-size: 18px; }
   .district-infrastructure__map {
-    height: 500px; }
+    height: 500px;
+    margin: 20px 0 0; }
   .about-tabs__content-description {
     width: 1005px;
     padding: 0;
@@ -428,19 +436,14 @@
     font-size: 50px;
     margin: 0 auto 30px; }
   .layouts-card {
-    color: #fff;
     min-height: 350px; }
     .layouts-card__plane {
-      display: none; }
-    .layouts-card__bg {
-      opacity: 1; }
+      height: 180px; }
+      .layouts-card__plane img {
+        max-height: 100%; }
     .layouts-card__title {
       margin: 0 auto 20px; }
-    .layouts-card__size {
-      margin: 0 auto auto; }
     .layouts-card .btn {
-      position: relative;
-      bottom: 0;
       padding: 10px 20px; }
   .layouts-slider, .advantages-slider {
     margin: 0;
@@ -462,27 +465,25 @@
     .slick-arrow-my.slick-next {
       right: 0;
       left: auto; }
-  .advantages-slider {
-    padding: 0 0 50px; }
-    .advantages-slider .slick-track {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch; }
-    .advantages-slider .slick-slide {
-      width: 280px;
-      height: auto; }
-    .advantages-slider .slick-arrow-my {
-      top: auto;
-      bottom: 0;
-      -webkit-transform: none;
-              transform: none; }
-      .advantages-slider .slick-arrow-my.slick-prev {
-        left: calc(50% - 50px); }
-      .advantages-slider .slick-arrow-my.slick-next {
-        right: calc(50% - 50px); }
+  .advantages-slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .advantages-slider .slick-slide {
+    width: 280px;
+    height: auto; }
+  .advantages-slider .slick-arrow-my {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: none;
+            transform: none; }
+    .advantages-slider .slick-arrow-my.slick-prev {
+      left: calc(50% - 50px); }
+    .advantages-slider .slick-arrow-my.slick-next {
+      right: calc(50% - 50px); }
   .advantages-box {
     min-height: auto;
     height: 100%; }
@@ -490,8 +491,14 @@
       opacity: 1;
       height: auto; }
     .advantages-box:before {
-      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(77.42%, rgba(15, 62, 75, 0)));
-      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 77.42%); } }
+      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(47.42%, rgba(15, 62, 75, 0)));
+      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%); }
+    .advantages-box:hover:before {
+      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(47.42%, rgba(15, 62, 75, 0)));
+      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%); }
+    .advantages-box:hover .advantages-box__bg {
+      -webkit-transform: none;
+              transform: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -570,7 +577,10 @@
     .btn-burger.open span {
       top: 10px; }
   .info-item {
-    margin-right: 0; }
+    margin-right: 0;
+    font-size: 16px; }
+  .start-sales {
+    font-size: 24px; }
   .start-sales-info {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -583,22 +593,19 @@
     font-size: 30px;
     margin: 0 auto 20px; }
   .home-content {
-    padding: 30px 20px; }
+    padding: 30px 20px;
+    background: rgba(74, 192, 179, 0.7);
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none; }
   .btn-all {
     margin: 0 auto;
     width: 100%; }
   .about-image {
     height: auto; }
-  .about-tabs .nav-tabs {
-    font-size: 18px;
-    line-height: 1;
-    list-style: none;
-    padding: 0; }
-    .about-tabs .nav-tabs .nav-item {
-      margin-right: 0;
-      width: 50%; }
-    .about-tabs .nav-tabs .nav-link {
-      line-height: 1; } }
+  .about .btn {
+    margin: 20px auto 0; }
+  .district-infrastructure__map {
+    height: 400px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -609,7 +616,9 @@
   .start-sales {
     font-size: 24px; }
   .info-item {
-    font-size: 17px; } }
+    font-size: 14px; }
+    .info-item p {
+      font-size: 16px; } }
 
 @media only screen and (max-width: 350px) {
   .schedule {
