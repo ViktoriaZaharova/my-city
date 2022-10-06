@@ -101,27 +101,7 @@
 .about-tabs
   width: 100%
   margin: 96px 0 0
-  //.nav-tabs
-  //  border: none
-  //  margin: 0 0 36px
-  //  display: flex
-  //  flex-direction: column
-  //  align-items: flex-start
-  //  font-size: 24px
-  //  line-height: 75px
-  //.nav-link
-  //  padding: 0
-  //  color: $accent
-  //  font-weight: normal
-  //  text-align: left
-  //  border: none
-  //    radius: 0
-  //  &.active
-  //    font-weight: bold
-  //    color: $hover
-  //    background: transparent
-  //.nav-item
-  //  margin: 0
+
 
 .about-slider-nav
   font-size: 24px
@@ -189,8 +169,12 @@
   &__bg
     width: 100%
     height: 100%
+    min-height: 368px
     object-fit: cover
     z-index: -1
+    position: absolute
+    left: 0
+    top: 0
     transition: .7s ease
   &:before
     content: ''
@@ -207,22 +191,18 @@
       transform: scale(1.1)
     &:before
       background: linear-gradient(0deg, rgba(15, 62, 75, 0.7), rgba(15, 62, 75, 0.7))
-    .advantages-box__content
-      margin: 0
-    .box-text, .btn
-      height: auto
-      opacity: 1
+    .box-text
+      display: block
   &__content
-    position: absolute
+    position: relative
     width: 100%
+    height: 100%
     display: flex
     flex-direction: column
     justify-content: flex-end
     padding: 54px 50px
     transition: .7s ease
-    bottom: 0
     z-index: 1
-    //transform: translateZ(0)
   h3
     max-width: 440px
     font-weight: bold
@@ -234,9 +214,8 @@
     font-weight: 350
     max-width: 506px
     line-height: 35px
-    opacity: 0
-    height: 0
     transition: .7s ease
+    display: none
 
 /*==========  section advantages end  ==========*/
 

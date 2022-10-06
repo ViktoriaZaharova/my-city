@@ -112,6 +112,8 @@ footer {
   width: 100%;
   font-size: 12px;
   line-height: 18px; }
+  .publication a {
+    color: #4AC0B3; }
 
 .menu-document {
   display: -webkit-box;

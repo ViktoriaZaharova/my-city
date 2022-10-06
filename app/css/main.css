@@ -199,9 +199,13 @@
   .advantages-box__bg {
     width: 100%;
     height: 100%;
+    min-height: 368px;
     -o-object-fit: cover;
        object-fit: cover;
     z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
     -webkit-transition: .7s ease;
     transition: .7s ease; }
   .advantages-box:before {
@@ -222,14 +226,12 @@
   .advantages-box:hover:before {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(15, 62, 75, 0.7)), to(rgba(15, 62, 75, 0.7)));
     background: linear-gradient(0deg, rgba(15, 62, 75, 0.7), rgba(15, 62, 75, 0.7)); }
-  .advantages-box:hover .advantages-box__content {
-    margin: 0; }
-  .advantages-box:hover .box-text, .advantages-box:hover .btn {
-    height: auto;
-    opacity: 1; }
+  .advantages-box:hover .box-text {
+    display: block; }
   .advantages-box__content {
-    position: absolute;
+    position: relative;
     width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,7 +245,6 @@
     padding: 54px 50px;
     -webkit-transition: .7s ease;
     transition: .7s ease;
-    bottom: 0;
     z-index: 1; }
   .advantages-box h3 {
     max-width: 440px;
@@ -256,10 +257,9 @@
     font-weight: 350;
     max-width: 506px;
     line-height: 35px;
-    opacity: 0;
-    height: 0;
     -webkit-transition: .7s ease;
-    transition: .7s ease; }
+    transition: .7s ease;
+    display: none; }
 
 /*==========  section advantages end  ==========*/
 /*==========  section district-infrastructure ==========*/

@@ -3,10 +3,22 @@ $('[name="phone"]').mask('+7(999) 999-99-99');
 $('.btn-burger').on('click', function (e) {
     e.preventDefault();
     $('header').toggleClass('active');
-    $(this).toggleClass('open');
     $('.mobile-menu').fadeToggle();
 });
 
+
+$('.go_to').click(function (e) {
+    e.preventDefault();
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length !== 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    $('.mobile-menu').fadeOut();
+    $('header').removeClass('active');
+    return false;
+});
 
 $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
     $('.slick-slider').slick('setPosition');

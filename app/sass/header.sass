@@ -33,6 +33,17 @@ header
     margin: -10px 0 0
   &.active
     background: #fff
+    .btn-burger
+      span
+        position: absolute
+        top: 17px
+        left: 0
+        &:nth-child(2)
+          width: 0
+        &:first-child
+          transform: rotate(45deg)
+        &:last-child
+          transform: rotate(135deg)
 
 
 .header-logo
@@ -58,24 +69,13 @@ header
   &:hover
     span
       background: $hover
-  &.open
-    span
-      position: absolute
-      top: 17px
-      left: 0
-      &:nth-child(2)
-        width: 0
-      &:first-child
-        transform: rotate(45deg)
-      &:last-child
-        transform: rotate(135deg)
 /*==========  section header end  ==========*/
 
 
 
 /*==========  section mobile-menu ==========*/
 .mobile-menu
-  position: fixed
+  position: absolute
   right: 0
   top: 198px
   z-index: 4

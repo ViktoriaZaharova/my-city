@@ -488,14 +488,13 @@
     min-height: auto;
     height: 100%; }
     .advantages-box .box-text {
-      opacity: 1;
-      height: auto; }
+      display: block; }
     .advantages-box:before {
-      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(47.42%, rgba(15, 62, 75, 0)));
-      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), to(rgba(15, 62, 75, 0)));
+      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 100%); }
     .advantages-box:hover:before {
-      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), color-stop(47.42%, rgba(15, 62, 75, 0)));
-      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 47.42%); }
+      background: -webkit-gradient(linear, left bottom, left top, from(#0F3E4B), to(rgba(15, 62, 75, 0)));
+      background: linear-gradient(360deg, #0F3E4B 0%, rgba(15, 62, 75, 0) 100%); }
     .advantages-box:hover .advantages-box__bg {
       -webkit-transform: none;
               transform: none; } }
