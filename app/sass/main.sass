@@ -298,7 +298,8 @@
     .layouts-card__bg
       opacity: 1
       transform: none
-
+    .btn-gallery
+      fill: #fff
   &__title
     margin: 0 auto auto
     transition: opacity .25s ease, transform .25s ease
@@ -339,6 +340,15 @@
     z-index: -1
     opacity: 0
 
+.btn-gallery
+  position: absolute
+  @include d-flex
+  top: 36px
+  right: 26px
+  width: 38px
+  height: 38px
+  fill: $accent
+  transition: .3s ease
 /*==========  section layouts end  ==========*/
 
 /*==========  section stages-work ==========*/
